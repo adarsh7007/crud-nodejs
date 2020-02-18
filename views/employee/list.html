@@ -1,5 +1,8 @@
+<h3><a class="btn btn-secondary" href="/employee"><i class="fa fa-plus"></i> Create</a> Employee List</h3>
+<table class="table table-striped">
+           
+           <table class="table table-sm table-dark">
 
-            <table>
                 <thead>
                 <tr>
                     <th>name</th>
@@ -15,16 +18,13 @@
                           <td>{{this.number}}</td>
                             <td>{{this.email}}</td>
                             <td>
-                                <a href="/employee/{{this._id}}">update</a>
-                                <a href="/employee/delete/{{this._id}}">delete</a>
+                                <a class="btn btn-secondary" href="/employee/{{this._id}}" >update</a>
+                                <a class="btn btn-primary" href="/employee/delete/{{this._id}}">delete</a>
                             </td>
                     </tr>
                     {{/each}}
                 </tbody>
             </table>
-
-
-
 
 
 
