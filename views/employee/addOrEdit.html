@@ -1,0 +1,24 @@
+<html>
+    <head>
+        </head>
+        <body>
+            <form action="/employee" method="POST">
+            <input type="hidden" name="_id" value="{{employee._id}}">
+               
+                <center>
+                    <h1>emplyee</h1>
+                <table border="1|1">
+                <tr><td>Name<input type="text" name="name" value ="{{employee.name}}"><td><tr>
+                    
+              
+                <tr><td>mobile no<input typr="number" name ="number"value ="{{employee.number}}"><td><tr>
+                <tr><td>email<input type="text" name="email"value ="{{employee.email}}"><td><tr>
+                <tr><td><center><button type="submit">sibmit</button></center><td><tr>
+                    <a href="/employee/list">view all</a>
+                </table>
+                </center>
+                </form>
+            </body>
+            </html>
+
+

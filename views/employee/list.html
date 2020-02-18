@@ -1,0 +1,33 @@
+
+            <table>
+                <thead>
+                <tr>
+                    <th>name</th>
+                    <th>number</th>
+                    <th>email</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                    {{#each list}}
+                    <tr>
+                        <td>{{this.name}}</td>
+                          <td>{{this.number}}</td>
+                            <td>{{this.email}}</td>
+                            <td>
+                                <a href="/employee/{{this._id}}">update</a>
+                                <a href="/employee/delete/{{this._id}}">delete</a>
+                            </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+
+
+
+
+
+
+
+
+
